@@ -2,6 +2,13 @@ plugins {
     java
 }
 
+java {
+    toolchain {
+        languageVersion.set(JavaLanguageVersion.of(21))
+        vendor.set(JvmVendorSpec.AMAZON)
+    }
+}
+
 repositories {
     mavenCentral()
 }
